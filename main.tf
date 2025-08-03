@@ -61,3 +61,7 @@ resource "aws_route_table_association" "cba_subnet_rt_public" {
   route_table_id = aws_route_table.cba_public_rt.id
 }
 
+data "aws_ssm_parameter" "instance_ami" {
+  name = "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+}
+
