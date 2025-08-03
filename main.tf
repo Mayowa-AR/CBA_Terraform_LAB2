@@ -81,3 +81,5 @@ resource "aws_instance" "cba_tf_instance" {
 
 }
 
+data "aws_region" "current" {}
+
